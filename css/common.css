@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Work+Sans:300,400,500,600,700');
+body {
+    color: #191919;
+    font-family: 'Work Sans', sans-serif;
+}
+
+img {
+    vertical-align: baseline;
+}
+
+.navbar {
+    min-height: 75px;
+    max-height: 10vh; 
+	background-color:rgba(0,0,0,0);
+}
+
+
+.nav1{	
+}
+
+
+nav a {
+	
+	margin-right:30px;
+	
+}
+
+
+nav .navbar-nav li a {
+	color: white !important;
+		
+}
+  
+  
+  
+nav .navbar-nav li a:hover {
+	color: rgb(250,13,26) !important;
+   
+}
+.logo{
+    margin-left:1vw !important;	
+}	 
+
+.site-branding {
+    transition: all .5s;
+}
+
+
+@media screen and (min-width: 992px) {
+    .outer-container {
+        padding-left: 80px;
+    }
+	
+}
+
+@media screen and (max-width: 768px) {
+
+	#nav-content a {
+		
+		margin:auto !important;
+		width:20%   !important;	
+	
+		
+	}
+
+} 
+

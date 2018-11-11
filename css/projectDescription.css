@@ -1,0 +1,39 @@
+.maintext {
+
+	position:relative !important;
+    top:120px !important;
+    padding-bottom:8px ; 
+}
+
+
+.maintopic{
+	
+		position:relative;
+	    top:90px;
+		margin-top:40px;
+			
+}
+
+.allproject{
+	margin-top:100px !important;
+}
+
+.image-of-project{
+    margin-bottom: 24px ; 
+    border: 1px solid  #aaaaaa ; 
+}
+
+
+.single-post .featured-img figure{
+    margin: 0;
+}
+
+.single-post .featured-img figure img {
+    width: 100%;
+}
+
+.single-post h1,p { 
+    color:white;
+}
+
+
