@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Work+Sans:300,400,500,600,700');
+body {
+    color: #191919;
+    font-family: 'Work Sans', sans-serif;
+}
+
+img {
+    vertical-align: baseline;
+}
+
+.navbar {
+    min-height: 75px;
+    max-height: 10vh; 
+	background-color:rgba(0,0,0,0);
+}
+
+
+.nav1{	
+}
+
+
+nav a {
+	
+	margin-right:30px;
+	
+}
+
+
+nav .navbar-nav li a {
+	color: white !important;
+		
+}
+  
+  
+  
+nav .navbar-nav li a:hover {
+	color: rgb(250,13,26) !important;
+   
+}
+  
+.logo{
+	
+    margin-left:1vw !important;
+    /* width:20vw  */
+	
+}	 
+ 
+  
+ /* Helper Utilities*/ 
+.flex {
+    display: flex;
+}
+
+
+
+/*outer-container*/
+@media screen and (min-width: 992px) {
+    .outer-container {
+        padding-left: 80px;
+    }
+	
+}
+
+@media screen and (min-width: 768px) {
+    .no-padding {
+        padding: 0;
+	}	
+	
+}
+
+ 
+@media screen and (max-width: 768px) {
+
+	#nav-content a {
+		
+		margin:auto !important;
+		width:20%   !important;	
+	
+		
+	}
+
+} 
+
+ 
+/* branding*/
+  .site-branding {
+    transition: all .5s;
+}
+
+.site-title {
+    margin: 0;
+    text-align: center;
+}
+
+.site-navigation .site-title a {
+    display: block;
+}
+
+
+  
+/*main content*/
+.portfolio-page .scroll-down {
+    margin-left: -60px;
+}
+
+.portfolio-content {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.home-page {
+    padding-top: 15px;
+}
+
+.home-page .portfolio-content {
+    margin-bottom: 15px;
+}
+
+.portfolio-content figure {
+    margin: 0;
+}
+
+.portfolio-content figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+
+.portfolio-content .entry-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.9);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s;
+}
+
+.portfolio-content:hover .entry-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-content h3 {
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.home-page .portfolio-content h3 {
+    font-size: 2.25rem;
+}
+
+.portfolio-content h3 a {
+    color: #191919;
+    text-decoration: none;
+}
+
+.portfolio-content ul {
+    padding: 0;
+    margin: 10px 0 0;
+    list-style: none;
+}
+
+.portfolio-content li {
+    margin: 0 3px;
+}
+
+.portfolio-content li a {
+    font-size: 0.875rem;
+    color: #a6a6a6;
+}
+
+@media screen and (min-width: 768px) {
+    .home-page {
+        padding: 0;
+    }
+
+    .home-page .portfolio-content {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+/*descreption page */
+
+
+.maintext {
+
+	position:relative !important;
+    top:120px !important;
+    padding-bottom:8px ; 
+}
+
+
+.maintopic{
+	
+		position:relative;
+	    top:90px;
+		margin-top:40px;
+			
+}
+
+
+
+.allproject{
+	margin-top:100px !important;
+}
+
+.image-of-project{
+    margin-bottom: 24px ; 
+    border: 1px solid  #aaaaaa ; 
+}
+
+
+
+
+
+.single-post .featured-img figure,
+.single-page .featured-img figure {
+    margin: 0;
+}
+
+.single-post .featured-img figure img,
+.single-page .featured-img figure img {
+    width: 100%;
+}
+
+.single-post h1,p { 
+    color:white;
+}
+
+
+
+
+
+
+
+
+	 
+
+
