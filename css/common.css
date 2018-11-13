@@ -69,11 +69,6 @@ nav .navbar-nav li a:hover {
 	#nav-content a {
 		
 		margin:auto !important;
-<<<<<<< HEAD
-		width:20%   !important;
-		
-	}
-=======
 		width:20%   !important;	
 		
 	}
@@ -88,6 +83,5 @@ nav .navbar-nav li a:hover {
 		position: relative;
 		left: 40vw;
 	}
->>>>>>> 1c55fbeeaf45757d55848a7cc6ad8b0c2ee6d47a
 	
 } 
