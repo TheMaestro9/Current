@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Work+Sans:300,400,500,600,700');
 body {
-    color: #191919;
+    color: white;
     background-color:#3d3d3d;
-    font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', sans-serif;
+	line-height: 20px; 
 }
 
 img {
@@ -54,6 +55,40 @@ nav .navbar-nav li a:hover {
 	position: absolute;
 	top: 0 ;
 	background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0)); /* Standard syntax (must be last) */
+}
+.shade-left{
+	pointer-events: none;
+	width: 10vw; 
+	height: 83%;
+	position: absolute;
+	/* top: 10vh ; */
+	left: 0;
+	/* background: black; */
+	background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0));
+	z-index: 10;
+	 /* Standard syntax (must be last) */
+}
+.shade-right{
+	pointer-events: none;
+	width: 10vw; 
+	height: 83% ; 
+	position: absolute;
+	/* top: 10vh ; */
+	right: 0;
+	/* background: black; */
+	background-image: linear-gradient(to left, rgba(0,0,0,0.7), rgba(0,0,0,0));
+	z-index: 10;
+
+	 /* Standard syntax (must be last) */
+}
+.bold { 
+	font-weight: bold ; 
+}
+.arabic { 
+	text-align: right ; 
+}
+.padding-bottom{
+	padding-bottom:20px ; 
 }
 
 
