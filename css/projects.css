@@ -15,7 +15,7 @@
 }
 
 .home-page {
-    padding-top: 15px;
+    padding-top: 75px !important;
 }
 
 .home-page .portfolio-content {
@@ -91,5 +91,11 @@
     .home-page .portfolio-content {
         margin-bottom: 0;
     }
+}
+
+img{
+	
+	border: 1px solid black;
+		
 }
 
