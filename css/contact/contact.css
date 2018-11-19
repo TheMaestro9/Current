@@ -11,48 +11,6 @@ body {
 img {
     vertical-align: baseline;
 }
- .navbar {
-	min-height: 75px;
-	background-color:black;
-}
-
-.nav1{	
-}
-
-
-nav a {
-	
-	margin-right:30px;
-	
-}
-
-
-nav .navbar-nav li a {
-	color: white !important;
-		
-}
-  
-  
-  
-nav .navbar-nav li a:hover {
-	color: orange !important;
-   
-}
-
-
- 
-@media screen and (max-width: 768px) {
-
-	#nav-content a {
-		
-		margin:auto !important;
-		width:20%   !important;	
-	}
-
-} 
-
-
-
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
@@ -77,33 +35,12 @@ a:hover, a:active {
     list-style: none;
 }
 
-or: #212121;
-}
 
 
 
 
 
-/*
-# Site Branding
---------------------------------*/
-.site-branding {
-    width: calc(100% - 24px);
-    padding: 20px 0;
-}
 
-.site-branding a {
-    margin-top: 6px;
-}
-
-@media screen and (min-width: 992px){
-    .site-branding {
-        width: auto;
-    }
-}
-
-
-/*
 # Button
 ----------------------------------*/
 .btn {
