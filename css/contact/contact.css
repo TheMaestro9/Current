@@ -40,7 +40,7 @@ a:hover, a:active {
 
 
 
-
+/*--------------------------------------------------------------
 # Button
 ----------------------------------*/
 .btn {
@@ -59,22 +59,26 @@ a:hover, a:active {
 }
 
 .btn.orange-border {
-    border-color: #ff5a00;
+    border-color: #ff0000;
 }
 
 .btn.orange-border:hover,
 .btn.gradient-bg {
     border-color: transparent;
-    background: -moz-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,90,0,1)), color-stop(100%, rgba(1255,54,0,1))); /* safari4+,chrome */
+    background: -moz-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* ff3.6+
+    /* background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,90,0,1)), color-stop(100%, rgba(1255,54,0,1))); safari4+,chrome */
     background: -webkit-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* safari5.1+,chrome10+ */
     background: -o-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* opera 11.10+ */
     background: -ms-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* ie10+ */
     background: linear-gradient(270deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a00', endColorstr='#ff3600',GradientType=1 ); /* ie6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a00', endColorstr='#ff3600',GradientType=1 );/* ie6-9*/
     color: #fff;
 }
 
+.btn.gradient-bg {
+    background: #ff0000 ;
+    color: white; 
+}
 
 /*--------------------------------------------------------------
 # About Page
@@ -114,7 +118,7 @@ a:hover, a:active {
     width: 64px;
     height: 4px;
     border-radius: 2px;
-    background: #ff5a00;
+    background: #ff0000;
 }
 
 .about-page .page-header {
@@ -131,7 +135,7 @@ a:hover, a:active {
 }
 
 .contact-page-wrap {
-    padding: 0 0 96px;
+    padding: 20px 0 96px;
 }
 
 .contact-page-wrap .entry-content {
@@ -141,13 +145,13 @@ a:hover, a:active {
 .contact-page-wrap .entry-content h2 {
     font-size: 24px;
     font-weight: 500;
-	color: #ffffff;
+	color: #212121;
 }
 
 .contact-page-wrap .entry-content p {
     margin-top: 20px;
     font-size: 14px;
-    color: #ffffff;
+    color: #212121;
 }
 
 .contact-page-wrap .entry-content ul.contact-social {
@@ -163,7 +167,7 @@ a:hover, a:active {
 }
 
 .contact-page-wrap .entry-content ul.contact-social li a {
-    color: #ff3700;
+    color: #ff0000;
 }
 
 .contact-page-wrap .entry-content ul.contact-info {
@@ -175,21 +179,22 @@ a:hover, a:active {
     align-items: baseline;
     margin-bottom: 15px;
     font-size: 14px;
-    color: #ffffff;
+    color: #212121;
 }
 
 .contact-page-wrap .entry-content ul.contact-info .fa {
     width: 28px;
     margin-right: 10px;
     font-size: 18px;
-    color: #ff5a00;
+    color: #ff0000;
     text-align: center;
 }
 
 .contact-form {
-    padding: 35px 20px 55px;
+    padding: 35px 20px 35px;
     margin-top: 96px;
     background: #181818;
+    border-radius:40px; 
 }
 
 .contact-form input[type="text"],
@@ -212,7 +217,7 @@ a:hover, a:active {
 .contact-form input[type="text"]::placeholder,
 .contact-form input[type="email"]::placeholder,
 .contact-form textarea::placeholder {
-    color: #929191;
+    color: #717171;
 }
 
 .contact-form span {
@@ -233,6 +238,10 @@ a:hover, a:active {
     display: block;
     width: 100%;
     height: 440px;
+}
+
+.text-area{
+    height: 150px;
 }
 
 /*--------------------------------------------------------------

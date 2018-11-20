@@ -48,7 +48,7 @@
             </ul>
 
             <!-- Brand -->
-                </nav>
+    </nav>
 
     <div class="super-background"></div>
     <div class="background"></div>
@@ -70,10 +70,16 @@
     </div>
 
     <div class="shade"></div>
-    <div class="starting">
+
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+    <!-- <div class="starting">
         <span class="center-helper"> </span>
         <img class='starting-image' src="images/logo.png">
-    </div>
+    </div> -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -89,6 +95,8 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="js/navHover.js"></script>
+    <!-- <script src="js/preloader.js"></script> -->
+
     <script type="text/javascript">
 
 
@@ -117,14 +125,26 @@
         $(function () {
             // $("nav").hover(navHoverHandlerin, navHoverHandlerout)
             // animateBackground(0); 
-            $('.starting-image').animate({ width: "75vw" }, 3000, function () {
-                $(".starting-image,.starting").animate({ opacity: "0" }, dAT, function () {
-                    $(".starting-image,.starting").css({ display: "none" })
+
+            // animateBackgroundPreLoad(0, 6, 100, function () {
+            // animateBackground(0)
+            // })
+            clPreloader();
+            $(window).load('load', function () {
+                animateBackgroundPreLoad(0, 6, 100, function () {
+
+                    clRemoveLoader()
+                    animateBackground(0)
+
+
                 })
-                animateBackground(0);
             })
-            animateBackgroundPreLoad(0, 6, 100)
-        });
+            // $(".starting-image,.starting").delay(3000).animate({ opacity: "0" }, dAT, function () {
+            //     animateBackground(0);
+            //     $(".starting-image,.starting").css({ display: "none" })
+            // })
+        })
+
 
         // function navHoverHandlerin() {
         //     console.log("in animage")
@@ -147,7 +167,7 @@
 
         }
 
-        function animateBackgroundPreLoad(iteration, end, time) {
+        function animateBackgroundPreLoad(iteration, end, time, callback) {
             var image = getElement(imgs, iteration);
 
             // console.log("in preload")
@@ -158,11 +178,12 @@
                         if (iteration > end) {
                             console.log("calling call back")
                             $(".background").css({ 'background-image': "none" });
+                            callback();
                         }
                         else
                             animateBackgroundPreLoad(iteration + 1, end, time, function () {
                                 console.log("calling mother call back")
-
+                                callback() 
                             })
                     }).delay(time)
             })
@@ -193,6 +214,23 @@
                 index += len
             return list[index % len]
         }
+
+        var clRemoveLoader = function () {
+            $("#loader").fadeOut("slow", function () {
+                // will fade out the whole DIV that covers the website.
+                $("#preloader").delay(300).fadeOut("slow");
+            });
+
+            // for hero content animations 
+            $("html").removeClass('cl-preload');
+            $("html").addClass('cl-loaded');
+        }
+        var clPreloader = function () {
+
+            $("html").addClass('cl-preload');
+
+        };
+
 
     </script>
 </body>
