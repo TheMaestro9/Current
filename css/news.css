@@ -30,6 +30,9 @@ body{
 	top:120px;
 }
 
+.ptitle{
+	font-size: 22px ;
+}
 .pageimg {
 	display:block;
 	margin:0 auto; 
@@ -54,7 +57,7 @@ body{
 	
 	color:#484848;
 	margin:0 auto;
-	
+	padding-bottom: 20px ; 
 	
 }
 
@@ -157,6 +160,8 @@ hr {
 	position:relative;
 	top:2vh;
 	color:white;
+	border-radius: 10px;
+	height: 25px;
 }
 
 
