@@ -73,8 +73,15 @@
 }
 .image-name{
     position: relative;
-    padding-left: 6% ; 
-    top : 55% ; 
+    padding-left: 3% ; 
+    top : 45% ;
+    font-size: 19px 
+}
+.image-sub-name{
+    position: relative;
+    padding-left:3% ; 
+    top : 25% ; 
+    font-size: 13px ; 
 }
 /* 
 .sp-black { 
