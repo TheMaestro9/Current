@@ -33,9 +33,8 @@
     color:white;
 } */
 
-
-#example3 .sp-selected-thumbnail {
-	border: 4px solid indianred;
+ .sp-selected-thumbnail {
+	border: 4px solid #292929;
 }
 
 .main-slider{ 
@@ -77,9 +76,10 @@
     padding-left: 6% ; 
     top : 55% ; 
 }
+/* 
 .sp-black { 
-    background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)); /* Standard syntax (must be last) */
-}
+    background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)); 
+} */
 /* .sp-slide img { 
     display: none ;
     
