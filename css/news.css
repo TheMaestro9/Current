@@ -82,8 +82,8 @@ body{
 
 .pageimg{
 	position:relative;
-	right:7vw;
-	max-height:50vh;
+	/* right:7vw;
+	max-height:50vh; */
 	height:auto;
 	width:80%;
 	
@@ -96,9 +96,9 @@ body{
 
 .myBtn{
 
-	position:relative;
-	top:5vh !important;
-	left:3vw !important;	
+	/* position:relative;
+	top:5vh !important; */
+	/* left:3vw !important;	 */
 }
 
 hr {

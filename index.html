@@ -14,16 +14,26 @@
 
 <body>
     <!-- <div class="nav-animation"> </div> -->
-    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-faded nav1">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content"
-            aria-expanded="true" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-faded nav1 fixed-top">
+
+
+
+        <!--.site-branding-->
         <div class="site-branding">
-            <a href="#">
+
+            <a href="index.html">
                 <img class="logo" src="images/Logo3.png" alt="">
             </a>
+
         </div>
+
+
+        <!--Toggler-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
 
 
         <!-- Links -->
@@ -47,7 +57,8 @@
 
             </ul>
 
-            <!-- Brand -->
+
+
     </nav>
 
     <div class="super-background"></div>
@@ -183,7 +194,7 @@
                         else
                             animateBackgroundPreLoad(iteration + 1, end, time, function () {
                                 console.log("calling mother call back")
-                                callback() 
+                                callback()
                             })
                     }).delay(time)
             })
