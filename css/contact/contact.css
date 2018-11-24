@@ -203,7 +203,7 @@ a:hover, a:active {
     width: 100%;
     padding: 12px 24px;
     margin-bottom: 18px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #c9c9c9;
     font-size: 14px;
     line-height: 1;
 }
@@ -217,7 +217,8 @@ a:hover, a:active {
 .contact-form input[type="text"]::placeholder,
 .contact-form input[type="email"]::placeholder,
 .contact-form textarea::placeholder {
-    color: #717171;
+    color: #b0b0b0;
+    opacity: 1;
 }
 
 .contact-form span {
@@ -243,6 +244,11 @@ a:hover, a:active {
 .text-area{
     height: 150px;
 }
+
+/* ::placeholder { Chrome, Firefox, Opera, Safari 10.1+
+    color: #6a6a6a;
+    opacity: 1;
+} */
 
 /*--------------------------------------------------------------
 # Contact Page
