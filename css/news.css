@@ -36,21 +36,15 @@ body{
 .pageimg {
 	display:block;
 	margin:0 auto; 
-    width:70%;
+    width:90%;
 	height:auto;
-	max-height:40vh;
+	max-height:300px;
 	border:1px solid #C8C8C8
 	
 }
 
 .row {
-	
-	position:relative;
-	top:10vh;
-	left:20px;
-	margin-top:25vh;
-	
-    
+	margin-top:100px ;     
 }
 
 .text{
@@ -158,10 +152,11 @@ hr {
 	border:none;
 	background-color:red;
 	position:relative;
-	top:2vh;
+	/* top:2vh; */
 	color:white;
 	border-radius: 10px;
 	height: 25px;
+	margin-bottom:10px ; 
 }
 
 .single-news{
@@ -175,6 +170,10 @@ hr {
 	background: #eeeeee ; 
 }
 
+
+.first-element{ 
+	margin-top:180px ; 
+}
 
 @media screen and (max-width: 768px) {}
 
