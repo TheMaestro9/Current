@@ -150,18 +150,19 @@ hr {
 .myBtn{
 	
 	border:none;
-	background-color:red;
+	background-color:#707070;
 	position:relative;
 	/* top:2vh; */
 	color:white;
 	border-radius: 10px;
-	height: 25px;
+	height: 20px;
 	margin-bottom:10px ; 
+	font-size: 12px
 }
 
 .single-news{
 	width:90% ; 
-	box-shadow: 0 1px 11px 0 rgba(0,0,0,0.7);
+	box-shadow: 0 1px 11px 0 rgba(0,0,0,0.3);
 	transition: 0.3s;
 	padding:20px ; 
 	border-radius: 20px ; 

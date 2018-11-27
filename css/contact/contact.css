@@ -139,7 +139,7 @@ a:hover, a:active {
 }
 
 .contact-page-wrap .entry-content {
-    margin-top: 96px;
+    /* margin-top: 96px; */
 }
 
 .contact-page-wrap .entry-content h2 {
@@ -191,8 +191,8 @@ a:hover, a:active {
 }
 
 .contact-form {
-    padding: 35px 20px 35px;
-    margin-top: 96px;
+    /* padding: 35px 20px 35px; */
+    /* margin-top: 96px; */
     /* background: #181818; */
     border-radius:40px; 
 }
@@ -395,4 +395,7 @@ a:hover, a:active {
     color: #7b7b7b;
     background: #131212;
     text-align: center;
+}
+.first{ 
+    padding-top:150px ;
 }

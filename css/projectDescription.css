@@ -59,6 +59,7 @@
 }
 
 .image-name-shade { 
+    pointer-events: none; 
     width:100% ; 
     height: 30%; 
     color: white; 
@@ -82,6 +83,11 @@
     padding-left:3% ; 
     top : 25% ; 
     font-size: 13px ; 
+}
+
+.slide-reference{ 
+    width:100% ;
+    height: 100%;
 }
 /* 
 .sp-black { 

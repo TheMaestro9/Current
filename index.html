@@ -62,7 +62,9 @@
     </nav>
 
     <div class="super-background"></div>
-    <div class="background"></div>
+    <a id='mainAnchor' href=#>
+        <div class="background"></div>
+    </a>
     <div style="display:none">
         <img src="images/02.jpg">
         <img src="images/03.jpg">
@@ -73,9 +75,9 @@
         <img src="images/07.jpg">
         <img src="images/08.jpg">
         <img src="images/09.jpg">
-        <img src="images/10.jpg">
+        <img src="images/8.jpg">
         <img src="images/11.jpg">
-        <img src="images/12.jpg">
+        <img src="images/012.jpg">
         <img src="images/13.jpg">
         <img src="images/14.jpg">
     </div>
@@ -115,20 +117,18 @@
         var DDT = 2000
         var gifDelay = 500
         var imgs = [
-            { name: "01", animationTime: dAT, delay: gifDelay },
-            { name: "02", animationTime: 0, delay: gifDelay },
-            { name: "03", animationTime: 0, delay: gifDelay },
-            { name: "04", animationTime: 0, delay: gifDelay },
-            { name: "05", animationTime: 0, delay: gifDelay },
+            { name: "01", animationTime: dAT, delay: gifDelay, page: "projectDescription.html" },
+            { name: "02", animationTime: 0, delay: gifDelay, page: "projectDescription2.html" },
+            { name: "03", animationTime: 0, delay: gifDelay, page: "projectDescription3.html" },
+            { name: "04", animationTime: 0, delay: gifDelay, page: "projectDescription4.html" },
+            { name: "05", animationTime: 0, delay: gifDelay, page: "projectDescription5.html" },
             { name: "06", animationTime: 0, delay: gifDelay },
             { name: "07", animationTime: dAT, delay: DDT },
             { name: "08", animationTime: dAT, delay: DDT },
             { name: "09", animationTime: dAT, delay: DDT },
-            { name: "10", animationTime: dAT, delay: DDT },
-            { name: "11", animationTime: dAT, delay: DDT },
+            { name: "17", animationTime: dAT, delay: DDT },
             { name: "12", animationTime: dAT, delay: DDT },
             { name: "13", animationTime: dAT, delay: DDT },
-            { name: "14", animationTime: dAT, delay: DDT }
         ]
 
 
@@ -205,6 +205,7 @@
             // if (image.animationTime == 0 && iteration%imgs.length==0)
             //     image.animationTime = dAT
             $(".background").animate({ opacity: "0" }, image.animationTime, function () {
+                $("#mainAnchor").attr("href" , image.page)
                 $(".background").css({ "background-image": "url('" + getImagePath(image.name) + "')" })
                     .animate({ opacity: "1" }, image.animationTime, function () {
                         animateBackground(iteration + 1)
