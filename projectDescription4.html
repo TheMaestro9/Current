@@ -77,8 +77,8 @@
                     <div class="shade-left"></div>
                     <div class="shade-right"></div>
 
-                    <img class="sp-image" src="../src/css/images/blank.gif" data-src="images/Projects/Mosque/01.jpg" data-small="images/07.jpg"
-                        data-medium="images/ProjectsN/Mosque/01.jpg" data-large="images/Projects/Mosque/01.jpg" data-retina="http://bqworks.com/slider-pro/images/image1_large.jpg"
+                    <img class="sp-image" src="../src/css/images/blank.gif" data-src="images/ProjectsN/high school/1.png" data-small="images/ProjectsN/high school/1.png"
+                        data-medium="images/ProjectsN/high school/1.png" data-large="images/ProjectsN/high school/1.png" data-retina="images/ProjectsN/high school/1.png"
                     />
 
                    
@@ -87,36 +87,36 @@
                 <div class="sp-slide">
                     <div class="shade-left"></div>
                     <div class="shade-right"></div>
-                    <img class="sp-image" src="../src/css/images/blank.gif" data-src="http://bqworks.com/slider-pro/images/image2_medium.jpg"
-                        data-small="images/08.jpg" data-medium="images/ProjectsN/Mosque/02.png" data-large="images/Projects/Mosque/02.jpg"
-                        data-retina="http://bqworks.com/slider-pro/images/image2_large.jpg" />
+                    <img class="sp-image" src="../src/css/images/blank.gif" data-src="images/ProjectsN/high school/2.png"
+                        data-small="images/ProjectsN/high school/2.png" data-medium="images/ProjectsN/high school/2.png" data-large="images/ProjectsN/high school/2.png"
+                        data-retina="images/ProjectsN/high school/2.png" />
 
                 </div>
 
                 <div class="sp-slide">
                     <div class="shade-left"></div>
                     <div class="shade-right"></div>
-                    <img class="sp-image" src="../src/css/images/blank.gif" data-src="http://bqworks.com/slider-pro/images/image3_medium.jpg"
-                        data-small="images/09.jpg" data-medium="images/ProjectsM/Mosque/03.jpg" data-large="images/Projects/Mosque/03.jpg"
-                        data-retina="http://bqworks.com/slider-pro/images/image3_large.jpg" />
+                    <img class="sp-image" src="../src/css/images/blank.gif" data-src="images/ProjectsN/high school/3.png"
+                        data-small="images/ProjectsN/high school/3.png" data-medium="images/ProjectsN/high school/3.png" data-large="images/ProjectsN/high school/3.png"
+                        data-retina="images/ProjectsN/high school/3.png" />
 
                 </div>
 
                 <div class="sp-slide">
                     <div class="shade-left"></div>
                     <div class="shade-right"></div>
-                    <img class="sp-image" src="../src/css/images/blank.gif" data-src="http://bqworks.com/slider-pro/images/image3_medium.jpg"
-                        data-small="images/09.jpg" data-medium="images/ProjectsN/Mosque/04.png" data-large="images/Projects/Mosque/03.jpg"
-                        data-retina="http://bqworks.com/slider-pro/images/image3_large.jpg" />
+                    <img class="sp-image" src="../src/css/images/blank.gif" data-src="images/ProjectsN/high school/4.png"
+                        data-small="images/ProjectsN/high school/4.png" data-medium="images/ProjectsN/high school/4.png" data-large="images/ProjectsN/high school/4.png"
+                        data-retina="images/ProjectsN/high school/4.png" />
 
                 </div>
 
                 <div class="sp-slide">
                     <div class="shade-left"></div>
                     <div class="shade-right"></div>
-                    <img class="sp-image" src="../src/css/images/blank.gif" data-src="http://bqworks.com/slider-pro/images/image3_medium.jpg"
-                        data-small="images/09.jpg" data-medium="images/ProjectsM/Mosque/05.jpg" data-large="images/Projects/Mosque/03.jpg"
-                        data-retina="http://bqworks.com/slider-pro/images/image3_large.jpg" />
+                    <img class="sp-image" src="../src/css/images/blank.gif" data-src="images/ProjectsN/high school/5.png"
+                        data-small="images/ProjectsN/high school/5.png" data-medium="images/ProjectsN/high school/5.png" data-large="images/ProjectsN/high school/5.png"
+                        data-retina="images/ProjectsN/high school/5.png" />
 
                 </div>
                 <div class="sp-slide">
@@ -439,6 +439,18 @@
                 autoplay: true,
             });
 
+
+            var isFullScreen = false;
+            $('.sp-full-screen-button').click(function () {
+                if (isFullScreen) { 
+                    $(".row").css({ display: "flex" })
+                    isFullScreen = false ; 
+                }
+                else { 
+                    $(".row").css({ display: "none" })
+                    isFullScreen = true ; 
+                }
+            })
 
             $(".sp-slides-container").hover(function () {
                 $(".shade-left , .shade-right").fadeIn(500);
