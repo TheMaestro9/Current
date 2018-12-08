@@ -38,8 +38,8 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 35%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5));
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7));
     font-family: 'Poppins', sans-serif;
 	border-left: 1px solid #303030;
     border-bottom: 1px solid #303030;
@@ -49,7 +49,8 @@
 	
 .portfolio-content h3 {
     margin-bottom: 0;
-	margin-left:3vh !important;
+    margin-left:3vh !important;
+    margin-top:80px; 
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;

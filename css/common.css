@@ -28,14 +28,21 @@ nav a {
 
 nav .navbar-nav li a {
 	color: white !important;
+	outline: none ; 
+}
+nav .navbar-nav li .selected-tab{
+	/* color: rgb(211, 54, 54) !important; */
+	color: rgb(250,13,26) !important;
+
 }
   
 nav .navbar-nav li a:hover {
 	-webkit-transition-duration: 500ms;
 	transition-duration: 500ms;
 
-	color: rgb(250,13,26) !important;
-   
+	/* color: rgb(250,13,26) !important; */
+	color: #AAAAAA !important;
+
 }
 .logo{
     margin-left:1vw !important;
@@ -183,3 +190,7 @@ nav .navbar-nav li a:hover {
 	}
 	
 } 
+
+.selected-tab { 
+	color: #9c2b2b !important;
+}
