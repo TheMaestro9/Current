@@ -46,11 +46,12 @@
     pointer-events: none;
 
 }
-	
+    
+
 .portfolio-content h3 {
     margin-bottom: 0;
     margin-left:3vh !important;
-    margin-top:80px; 
+    /* margin-top:80px;  */
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
@@ -91,9 +92,24 @@
     }
 }
 
+@media screen and (max-width: 992px) {
+
+    .home-page .portfolio-content h3 {
+        font-size: 20px;
+    }
+}
+
 img{
 	
 	border-left: 1px solid #303030;
 		
+}
+
+
+
+.project-name-wrapper{ 
+	position: absolute;
+	bottom: 0 ;
+	margin-bottom: 10px ; 
 }
 
