@@ -110,7 +110,7 @@ hr {
 
 .row{
 	
-	margin-top:17vh;
+	
 }
 
 .ptitle{
@@ -118,6 +118,10 @@ hr {
 	top:2vh;
 	margin:20px;
 	width:auto;
+}
+
+.first-element{ 
+	margin-top:15vh !important; 
 }
 
 }
