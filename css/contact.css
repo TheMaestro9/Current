@@ -399,3 +399,16 @@ a:hover, a:active {
 .first{ 
     padding-top:150px ;
 }
+
+
+/*do not delete this*/
+
+    @media screen and (max-width: 992px) {
+
+    .first {
+
+        position: relative;
+        bottom: 8vh;
+    } 
+    
+    }
