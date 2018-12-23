@@ -101,8 +101,13 @@
 
 img{
 	
-	border-left: 1px solid #303030;
+    border-left: 1px solid #303030;
 		
+}
+
+.portfolio-content img { 
+    background:transparent url('../images/loading.gif') center center no-repeat;
+
 }
 
 
