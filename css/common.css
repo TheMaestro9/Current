@@ -136,12 +136,32 @@ nav .navbar-nav li a:hover {
 	  transform: rotate(360deg);
 	}
   }
-  
+
+	
+	
+.footer{
+	padding-top:50px ; 
+}
+
+hr.footer-line {
+	width: 100% ; 
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.3));
+}
+.footer-txt{ 
+	font-size: 14px ; 
+	margin-top: -20px ; 
+	  
+}
 
 @media screen and (min-width: 992px) {
     .outer-container {
         padding-left: 80px;
-    }
+		}
+		
+	
+	
 	
 }
 
@@ -163,6 +183,11 @@ nav .navbar-nav li a:hover {
 		width: 60%;
 		position: relative;
 		left: 40vw;
+	}
+
+		
+	.footer-txt{ 
+		font-size: 12px ; 			
 	}
 	
 } 

@@ -34,7 +34,7 @@
         <div class="site-branding">
 
             <a href="index.html">
-                <img class="logo" src="images/logo3.png" alt="">
+                <img class="logo" src="images/Logo3.png" alt="">
             </a>
 
         </div>
@@ -62,7 +62,7 @@
                     <a class="nav-link" href="news.html">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link selected-tab" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
 
             </ul>
@@ -76,7 +76,7 @@
         <div class="container first">
             <div class="row" data-aos="fade-right" data-aos-duration="2500">
                 <div class="col-12 col-lg-5">
-                    <div class="entry-content" >
+                    <div class="entry-content">
                         <h2>Get In touch with us</h2>
 
                         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem
@@ -97,7 +97,8 @@
                             </li>
                             <li>
                                 <i class="fa fa-map-marker"></i>
-                                <span>building no. 35, Al mostathmer el shaghir,<br> 6th of October city, Giza, Egypt</span>
+                                <span>building no. 35, Al mostathmer el shaghir,
+                                    <br> 6th of October city, Giza, Egypt</span>
                             </li>
                         </ul>
                     </div>
@@ -105,13 +106,13 @@
                 <!-- .col -->
 
                 <div class="col-12 col-lg-7">
-                    <form class="contact-form" action="mailto:walidmoussa995@gmail.com" method="post" enctype="text/plain">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <textarea class="text-area" rows="15" cols="6" placeholder="Messages"></textarea>
+                    <form class="contact-form" action="sendEmail.php" method="post">
+                        <input type="text" name='name' placeholder="Your Name...">
+                        <input type="email" name='mail' placeholder="Your Email...">
+                        <textarea class="text-area" name = 'message' rows="15" cols="6" placeholder="Message..."></textarea>
 
                         <span>
-                            <input class="btn gradient-bg" type="submit" value="Contact us">
+                            <button class="btn gradient-bg" type="submit" name="submit" > Send Mail </button>
                         </span>
                     </form>
                     <!-- .contact-form -->
@@ -142,6 +143,28 @@
 
     <script src="js/bootstrap/bootstrap.js"></script>
 
+    <script>
+
+            
+        function getParameterByName(name, url) {
+            if (!url)
+                url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                    results = regex.exec(url);
+            if (!results)
+                return null;
+            if (!results[2])
+                return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+        
+        
+        var mailSend = getParameterByName("mailsend") ; 
+        if(mailSend!=null)
+            alert("Your Email Was Sent Successfully")
+        
+    </script>
 
 </body>
 
