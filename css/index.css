@@ -2,13 +2,13 @@
 
 
 
-body
+/* body
 {
 	margin: 0;
 	padding: 0;
 	height: 100%;
 	font-family:  'Work Sans', sans-serif;
-}
+} */
 
 .background
 {
@@ -33,55 +33,10 @@ body
 }
 
 
-.starting{ 
-	background-color: #212121 ; 
-	position:absolute; 
-	height: 100vh; 
-	width: 100vw;
-	z-index: 2000;
-	top:0 ; 	
-	text-align: center;
-}
+@media screen and (max-width: 992px){
 
-.center-helper{ 
-	display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-.starting-image{ 
-	width:50vw ; 
-	vertical-align: middle ; 
+
 }
 
 
-/* .navbar {
-	min-height: 75px;
 
-	background-color:rgba(0,0,0,0.0);
-}
-
-nav a {	
-	margin-right:30px;
-}
-
-
-nav .navbar-nav li a {
-	color: white !important;
-}
-
-
-  
-nav .navbar-nav li a:hover {
-	color: orange !important;
-}
- */
-
-@media screen and (max-width: 768px) {
-
-	/* #nav-content a {
-		margin:auto !important;
-		width:20%   !important;	
-	} */
-  
-}
- 

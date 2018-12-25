@@ -12,8 +12,9 @@ img {
 
 .navbar {
 	font-family: 'Work Sans';
-  min-height: 75px;
-  max-height: 10vh; 
+  min-height: 70px;
+	max-height: 10vh;
+	/* height: 10vh; */
 	background-color:rgba(0,0,0,1);
 	z-index: 2000; 
 	/* background: black; */

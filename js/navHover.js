@@ -1,4 +1,6 @@
 $(function () {
+
+    $(".navbar").animate({ "background-color": "rgba(0,0,0,0)" }, 300);
     var onTop = true ;
     if($(window).scrollTop() != 0) {
         navHoverHandlerin() ; 
