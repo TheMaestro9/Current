@@ -146,6 +146,9 @@
     .shade {
         top: 43%;
     }
+    .sp-full-screen-button {
+        display:none;
+    }
 }
 
 @media screen and (max-width: 768px) {
