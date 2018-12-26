@@ -160,6 +160,17 @@
     .sp-full-screen-button {
         display:none;
     }
+
+    /* .sp-arrow{
+        width:10px; 
+        height: 15px;
+    }
+    .arrow-shade{
+        height: 25px;
+    }
+    .arrow-shade-container{
+        width:25px ;
+    } */
 }
 
 @media screen and (max-width: 480px) {

@@ -101,12 +101,12 @@ body{
 	/* left:3vw !important;	 */
 }
 
-hr {
+/* hr {
 	
 	position:relative;
 	top:18vh !important;
 	
-}
+} */
 
 .row{
 	
@@ -141,7 +141,7 @@ hr {
 
 
 
-hr {
+/* hr {
     
 	position:relative;
 	top:15vh;
@@ -149,7 +149,7 @@ hr {
 	height: 12px;
     border: 0;
     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .myBtn{
 	

@@ -48,6 +48,7 @@ nav .navbar-nav li a:hover {
 .logo{
     margin-left:1vw !important;
 	border:none;
+	width:170px ; 
 }	 
 
 .site-branding {
@@ -183,7 +184,8 @@ hr.footer-line {
 		background: black;
 		width: 60%;
 		position: relative;
-		left: 40vw;
+		left: 41vw;
+		top:-8px ;
 	}
 
 		

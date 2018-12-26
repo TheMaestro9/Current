@@ -11,7 +11,7 @@
 
         $mailTo = "info@mdd-architects.com" ; 
         $headers = "From: ".$mailFrom ;
-        $sideNote = "\n\ndon't reply to this email as it will be marked as for your potential client !"
+        $sideNote = "\n\ndon't reply to this email as it will be marked as spam for your potential client !" ; 
         $txt = "You hare received an email from ". $name."\n\n".$message.$sideNote;
 
         mail($mailTo , "Mail From Your Website!" , $txt , $headers) ; 
